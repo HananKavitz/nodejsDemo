@@ -2,8 +2,8 @@
   "name": "babel-node-starter",
   "version": "1.0.0",
   "description": "babel nodejs starter",
-  "author": "Tristan Teufel",
-  "homepage": "hanan.com",
+  "author": "Hanan Kavitz",
+  "homepage": "https://myfirstnodejsapp-238305.appspot.com/",
   "repository": {
     "type": "git",
     "url": "https://github.com/HananKavitz/nodejsDemo.git"
