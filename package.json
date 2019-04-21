@@ -15,7 +15,8 @@
     "nodemon": "nodemon",
     "lint:fix": "eslint --fix src",
     "test": "jest --coverage",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "node ./app.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
