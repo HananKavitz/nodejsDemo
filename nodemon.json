@@ -1,6 +1,6 @@
 {
-  "watch": ["src"],
+  "watch": ["src", "app.js"],
   "ext": "js",
-  "ignore": ["src/**/*.spec.js", "app.js"],
-  "exec": "babel-node src --presets=env"
+  "ignore": ["src/**/*.spec.js", ".git"],
+  "exec": "babel-node app.js --presets=env"
 }

@@ -16,7 +16,8 @@
     "lint:fix": "eslint --fix src",
     "test": "jest --coverage",
     "build": "webpack",
-    "start": "node ./app.js"
+    "start": "node ./app.js",
+    "deploy": "gcloud app deploy --project myfirstnodejsapp-238305"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

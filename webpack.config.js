@@ -1,6 +1,6 @@
-const path = require('path'),
-  webpack = require('webpack'),
-  cleanWebpackPlugin = require('clean-webpack-plugin');
+const path = require("path"),
+  webpack = require("webpack"),
+  cleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
   target: "node",
