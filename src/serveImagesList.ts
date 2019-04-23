@@ -1,13 +1,14 @@
 
 const express = require('express');
+import { Response, Request, NextFunction } from "express";
 var router = express.Router();
 const fs = require('fs');
 const path = require('path');
 
-router.get('/images',(req:Express.Request, res: any, next: Function) => {
+router.get('/images',(req: Request, res: Response, next: NextFunction) => {
     const staticLocation = 'static/outputs';
     const p = path.join(__dirname,'../', staticLocation);
-    console.log(p);
+   
     fs.readdir(p, (err: Error, files: string[]) => {
         if (err){
             console.log(err);
