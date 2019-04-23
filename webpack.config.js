@@ -5,10 +5,16 @@ const path = require("path"),
 module.exports = {
   target: "node",
   context: __dirname,
-  entry: ["./src/index.js"],
+  entry: ["./dist/app.js"],
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "index.js"
+    filename: "app.js"
+  },
+  // Enable sourcemaps for debugging webpack's output.
+  devtool: "source-map",
+  resolve: {
+    // Add '.ts' and '.tsx' as resolvable extensions.
+    extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
   },
   module: {
     rules: [
@@ -22,6 +28,14 @@ module.exports = {
           }
         }
       }
+    ],
+    loaders: [
+      // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
+      { test: /\.tsx?$/, loader: "awesome-typescript-loader" }
+    ],
+    preLoaders: [
+      // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
+      { test: /\.js$/, loader: "source-map-loader" }
     ]
   },
   plugins: [
