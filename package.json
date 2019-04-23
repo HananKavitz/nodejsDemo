@@ -11,12 +11,13 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "dev": "node-dev src",
-    "nodemon": "tsc && nodemon",
+    "nodemon": "ts-node ./src/app.ts",
+    "dev": "node node_modules/nodemon/bin/nodemon.js",
     "lint:fix": "eslint --fix src",
     "test": "jest --coverage",
     "build": "webpack",
-    "start": "tsc && node ./dist/app.js",
+    "start": "node ./dist/app.js",
+    "run": "tsc && npm start",
     "deploy": "gcloud app deploy --project myfirstnodejsapp-238305"
   },
   "devDependencies": {
@@ -42,6 +43,7 @@
     "prettier": "^1.10.2",
     "source-map-loader": "^0.2.4",
     "ts-node": "^8.1.0",
+    "typescript": "^3.4.4",
     "webpack": "^3.11.0"
   },
   "jest": {

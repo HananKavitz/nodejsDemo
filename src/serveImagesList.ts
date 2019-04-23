@@ -17,7 +17,6 @@ router.get('/images',(req:Express.Request, res: any, next: Function) => {
         files = files.map((file: string): string => {
             return  path.join(staticLocation, file);
         } );
-        console.log(files);
         res.status(200).send(files);
 
     })

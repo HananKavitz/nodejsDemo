@@ -1,6 +1,6 @@
 {
-  "watch": ["dist"],
-  "ext": "js",
-  "ignore": ["src/**/*.spec.js", ".git"],
-  "exec": "babel-node app.js --presets=env"
+  "watch": ["src"],
+  "ext": "ts",
+  "ignore": ["src/**/*.spec.js", ".git", "client", "node_modules"],
+  "exec": "npm run nodemon"
 }
