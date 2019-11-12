@@ -12,6 +12,8 @@
 # below:
 .git
 .gitignore
+LICENSE
+coverage
 
 # Node.js dependencies:
 node_modules/
